@@ -38,7 +38,7 @@ var browserifyTask = function(callback, devMode) {
       bundleLogger.start(bundleConfig.outputName);
 
       return b
-        .transform(reactify({ stripTypes: true }))
+        .transform(reactify, {stripTypes: true})
         .bundle()
         // Report compile errors
         .on('error', handleErrors)
