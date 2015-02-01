@@ -30,5 +30,6 @@ module.exports = {
     cssSrc: dest + '/*.css',
     jsSrc: dest + '/*.js',
     dest: dest
-  }
+  },
+  dest:dest
 };
